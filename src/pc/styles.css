@@ -1,0 +1,67 @@
+.button {
+    -fx-background-color: #1c99ff;
+    -fx-background-radius: 50;
+}
+
+.button:hover {
+    -fx-background-color: #66baff;
+}
+
+.button:pressed {
+    -fx-background-color: #0062b3;
+}
+
+.button:disabled {
+    -fx-background-color: #bfbfbf;
+    -fx-text-fill: #666666;
+}
+
+.progress-bar {
+    -fx-indeterminate-bar-length: 100;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+    -fx-background-color: #d7d7d7;
+    -fx-background-radius: 7;
+}
+.progress-bar > .bar {
+    -fx-background-color: #393939;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 7;
+    -fx-padding: 0;
+}
+.progress-bar:indeterminate > .bar {
+    -fx-background-color: linear-gradient(to left, transparent, -fx-accent);
+}
+.progress-bar > .track {
+      -fx-background-color: #d7d7d7;
+    -fx-background-insets: 0, 0 0 1 0, 0 0 0 0;
+    -fx-background-radius: 15; /*4, 3, 2; /* 10, 9, 8 */
+}
+
+.motors {
+    -fx-indeterminate-bar-length: 100;
+        -fx-indeterminate-bar-escape: true;
+        -fx-indeterminate-bar-flip: true;
+        -fx-indeterminate-bar-animation-time: 2;
+        -fx-background-color: #d7d7d7;
+        -fx-background-radius: 0 7 7 0;
+}
+
+.motors > .bar {
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0 7 7 0;
+    -fx-padding: 0;
+}
+#motor-upper > .bar {
+    -fx-background-color: linear-gradient(to right, #f7e331, #ef7f34);
+}
+
+#motor-lower > .bar{
+    -fx-background-color: linear-gradient(to right, #f7e331, #00C993);
+}
+
+#distance > .bar {
+    -fx-background-color: linear-gradient(to right, #9940ed, #31F9F9);
+}
+
